@@ -1,0 +1,266 @@
+
+html{
+    font-size: 12px;
+
+}
+
+body{
+    font-family: Raleway, Courier, monospace;
+    background: linear-gradient(to bottom, #000, #FF0000);
+    height:100vh;
+    margin: 0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 100px 0 200px 0;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+h1{
+    color: white;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4rem;
+    font-family: Lato, Courier, monospace;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.användarnamn, .lösenord{
+    background-color: rgb(226, 226, 226);
+    border: 1px solid grey;
+    border-radius: 5px;
+    justify-content: center;
+    padding: 10px 230px 10px 5px;
+    margin: 10px;
+    color: rgb(183, 183, 183);
+}
+
+.login{
+    background-color: rgb(51, 51, 51);
+    border: 1px solid rgb(88, 88, 88);
+    border-radius: 5px;
+    padding: 5px 145px;
+    color: white;
+    font-size: 2rem;
+    margin-top: 10px;
+    font-family: Lato, Courier, monospace;
+}
+
+.googlelogin{
+    background-color: rgb(205, 205, 205);
+    border: 3px solid rgb(211, 211, 211);
+    border-radius: 5px;
+    padding: 5px 50px;
+    width: 280px;
+    color: black;
+    font-family: Lato, Courier, monospace;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.facebooklogin{
+    background-color: rgb(112, 131, 255);
+    border: 3px solid rgb(120, 137, 248);
+    border-radius: 5px;
+    padding: 5px 50px;
+    width: 280px;
+    color: rgb(255, 255, 255);
+    font-family: Lato, Courier, monospace;
+    font-size: 1.7rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+}
+
+.glömt, p{
+    color: white;
+    font-size: 15px;
+}
+
+.chbox{
+    display: flex;  
+}
+
+.eller{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100px ;
+    height: 200px;
+    color: white;
+    margin: 0 40px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 200px;
+    width: 400px;
+}
+
+footer{
+    background-color: rgb(163, 163, 163);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+footer p{
+    margin-left: 20px;
+}
+
+
+@media (0px <= width < 920px) {
+    body{
+        background: linear-gradient(#F2F2F2,#d6d5d5);
+    }
+
+    header{
+        flex-grow: 2;
+        height: 300px;
+    }
+
+    h1{
+        font-size: 5rem;
+        color: #000;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 2;
+    }
+    .användarnamn, .lösenord{
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        justify-content: center;
+        padding: 15px 270px 15px 10px;
+        margin: 10px;
+        color: rgb(236, 236, 236);
+    }
+
+    .login{
+        background-color: rgb(255, 55, 55);
+        border: 1px solid rgb(255, 104, 104);
+        border-radius: 4px;
+        padding: 20px 165px;
+        color: white;
+        font-size: 2rem;
+        margin-top: 10px;
+        font-family: Lato, Courier, monospace;
+    }
+
+    .googlelogin{
+        background-color: rgb(205, 205, 205);
+        border: 3px solid rgb(231, 230, 230);
+        border-radius: 5px;
+        padding: 20px 70px;
+        width: 280px;
+        color: black;
+        font-family: Lato, Courier, monospace;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .facebooklogin{
+        background-color: rgb(112, 131, 255);
+        border: 3px solid rgb(127, 143, 246);
+        border-radius: 5px;
+        padding: 20px 70px;
+        width: 280px;
+        color: rgb(255, 255, 255);
+        font-family: Lato, Courier, monospace;
+        font-size: 1.7rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+
+
+    .div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 420px;
+    }
+
+    .glömt, p{
+        color: rgb(46, 46, 46);
+        font-size: 15px;
+        margin: 30px 0;
+    }
+
+    .chbox{
+        display: flex;  
+    }
+
+    .eller{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100px ;
+        height: 50px;
+        color: rgb(41, 41, 41);
+        margin: 10px;
+        font-size: 3em;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        background-color: rgb(69, 69, 69);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+    }
+    footer p{
+        color: #F2F2F2;
+        text-align: center;
+    }
+}
