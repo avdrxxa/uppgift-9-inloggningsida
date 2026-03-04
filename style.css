@@ -6,7 +6,6 @@ html{
 
 body{
     font-family: Raleway, Courier, monospace;
-    background: linear-gradient(to bottom, #000, #FF0000);
     height:100vh;
     margin: 0;
 }
@@ -150,9 +149,6 @@ footer p{
 
 
 @media (0px <= width < 920px) {
-    body{
-        background: linear-gradient(#F2F2F2,#d6d5d5);
-    }
     
     header{
         flex-grow: 2;
@@ -164,7 +160,7 @@ footer p{
         color: #000;
     }
     .break{
-        height: 50px;
+        height: 1000px;
     }
     
     .flex{
@@ -183,7 +179,10 @@ footer p{
         padding: 15px 270px 15px 10px;
         margin: 10px;
     }
-
+    .hidden{
+        display: none;
+    }
+    
     .login{
         background-color: rgb(255, 55, 55);
         border: 1px solid rgb(255, 104, 104);
@@ -194,7 +193,7 @@ footer p{
         margin-top: 10px;
         font-family: Lato, Courier, monospace;
     }
-
+    
     .googlelogin{
         background-color: rgb(205, 205, 205);
         border: 3px solid rgb(231, 230, 230);
@@ -206,8 +205,8 @@ footer p{
         font-size: 1.7rem;
         text-align: center;
     }
-
-    .facebooklogin{
+    
+    .facebooklogin, .mode{
         background-color: rgb(112, 131, 255);
         border: 3px solid rgb(127, 143, 246);
         border-radius: 5px;
@@ -219,26 +218,30 @@ footer p{
         margin-top: 20px;
         text-align: center;
     }
-
-
-
+    
+    .mode{
+        background-color: rgb(92, 155, 78) ;
+        border: 3px solid  rgb(78, 135, 65);
+        color: #000;
+    }
+    
     .div{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 420px;
     }
-
+    
     .glömt, p{
         color: rgb(46, 46, 46);
         font-size: 15px;
         margin: 30px 0;
     }
-
+    
     .chbox{
         display: flex;  
     }
-
+    
     .eller{
         display: flex;
         align-items: center;
@@ -255,7 +258,7 @@ footer p{
         justify-content: center;
         align-items: center;
     }
-
+    
     footer{
         background-color: rgb(69, 69, 69);
         position: absolute;
@@ -263,10 +266,22 @@ footer p{
         width: 100%;
         position: fixed;
         bottom: 0;
-
+        
     }
     footer p{
         color: #F2F2F2;
         text-align: center;
+    }
+    body {
+    background-color: #F2F2F2;
+    color: black;
+    }
+
+    body.dark {
+        background-color: black;
+        color: white;
+        h1{
+            color: white;
+        }
     }
 }

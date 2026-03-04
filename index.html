@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
 </head>
-<body>
+<body class="dark">
     <header>
         <h1>Inloggning</h1>
     </header>
@@ -18,23 +18,20 @@
         <main>
         <input class="användarnamn" placeholder="Användernamn" type="text">
         <input class="lösenord" placeholder="Lösenord" type="text">
-        <div class="div">
-            <div class="chbox">
-                <input class="komihågmig" type="checkbox" name="Kom ihåg mig" >
-                <p>Kom ihåg mig</p>
-            </div>
-            <a class="glömt" href="www.nackademin.com">Glömt lösenord</a>
-        </div>
         <button class="login">Logga in</button>
         </main>
         <div class="eller">
             <h2>eller</h2>
         </div>
         <aside>
-            <a class="googlelogin" href="">Registera</a>
-            <a class="facebooklogin" href="">Logga ut</a>
+            <button class="googlelogin" href="">Registera</button>
+            <button class="facebooklogin" href="">Logga ut</button>
+            <button class="mode">Dark mode</button>
         </aside>
     </div>
+    <h1 class="hidden">Dina to dos</h1>
+    <ul class="todos">
+    </ul>
     <div class="break"></div>
     <footer>
         <p>
